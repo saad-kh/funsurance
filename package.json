@@ -1,0 +1,19 @@
+{
+  "name": "funsurance",
+  "version": "1.0.0",
+  "description": "Funsurance Project for the Zurick Insurhack Hackathon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saad-kh/funsurance.git"
+  },
+  "author": "saad-kh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saad-kh/funsurance/issues"
+  },
+  "homepage": "https://github.com/saad-kh/funsurance#readme"
+}
