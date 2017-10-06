@@ -4,9 +4,9 @@
   "description": "Funsurance Project for the Zurick Insurhack Hackathon",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server & next",
+    "dev": "./node_modules/.bin/nodemon server & next",
     "build": "next build",
-    "start": "nodemon server & next start",
+    "start": "./node_modules/.bin/nodemon server & next start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,9 +20,11 @@
   },
   "homepage": "https://github.com/saad-kh/funsurance#readme",
   "dependencies": {
+    "cors": "^2.8.4",
     "material-ui": "^1.0.0-beta.13",
     "material-ui-icons": "^1.0.0-beta.15",
     "next": "^4.0.0-beta.3",
+    "nodemon": "^1.12.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
   },

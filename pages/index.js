@@ -38,13 +38,22 @@ class Index extends Component {
     });
   };
 
+   whereAreWeGoing = async () => {
+    const res = await fetch('http://localhost:3001/destination')
+    const text = await res.text();
+    this.setState({
+      open: true,
+      destination: text
+    })
+  }
+
   render() {
     return (
       <div className={this.props.classes.root}>
         <Dialog open={this.state.open} onRequestClose={this.handleRequestClose}>
-          <DialogTitle>Funsurance Going to</DialogTitle>
+          <DialogTitle>Where to? </DialogTitle>
           <DialogContent>
-            <DialogContentText>Where?</DialogContentText>
+            <DialogContentText>{this.state.destination}</DialogContentText>
           </DialogContent>
           <DialogActions>
             <Button color="primary" onClick={this.handleRequestClose}>
@@ -58,7 +67,7 @@ class Index extends Component {
         <Typography type="subheading" gutterBottom>
           Everyday insurance Track
         </Typography>
-        <Button raised color="accent" onClick={this.handleClick}>
+        <Button raised color="accent" onClick={this.whereAreWeGoing}>
           Go
         </Button>
       </div>
