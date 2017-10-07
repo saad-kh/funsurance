@@ -13,6 +13,7 @@ import Dialog, {
 import Typography from 'material-ui/Typography';
 import withStyles from 'material-ui/styles/withStyles';
 import withRoot from '../components/withRoot';
+import ImagePicker from '../components/image-picker';
 
 const styles = {
   root: {
