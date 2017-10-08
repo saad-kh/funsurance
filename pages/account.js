@@ -73,7 +73,7 @@ class Account extends Component {
         <House house={house}/>
         <Log
           title='Policies'
-          entries={policies}
+          entries={user.contracts}
           renderEntry={(entry) =>
             <Event className='event'
               avatars={avatars}
@@ -87,6 +87,14 @@ class Account extends Component {
               avatars={avatars}
               event={entry}/>}
         />
+        <button className='expose-button'>
+          <div className='icon'>
+            <ShareIcon/>
+          </div>
+          <span className='text'>
+            Concierge Expose as a PDF
+          </span>
+        </button>
         <style jsx>{`
           :global(body) {
             margin:0px;
@@ -156,6 +164,32 @@ class Account extends Component {
             border: 1px solid #E8E9EA;
             margin: 0px 10px;
           }
+          .expose-button{
+            pointer-events: none;
+            position: relative;
+            cursor: pointer;
+            margin: 20px 5px;
+            height: 47px;
+            width: 335px;
+            border-radius: 3px;
+            background-color: #F95A2E;
+            border: none;
+            color: white;
+            color: #FFFFFF;
+            font-family: Heebo;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 47px;
+            text-align: center;
+          }
+
+          .expose-button .icon {
+            display: inline;
+            position: absolute;
+            top: 8px;
+            left: 20px;
+          }
+
         `}</style>
       </div>
     );

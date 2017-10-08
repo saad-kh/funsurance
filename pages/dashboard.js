@@ -32,7 +32,7 @@ class Dashboard extends Component {
 
     const events = [
       ...(user.policies || []),
-      ...(user.interventions || [])
+      ...( [])
     ];
 
     events.sort((a, b) => (

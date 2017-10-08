@@ -62,10 +62,12 @@ class Response extends Component {
         :
         <div className='issue'>
           <div className='query'>
-            Understand you  have [...] {response.issue}
+            Understand you  have:  {response.issue}
           </div>
           {response.coverages && response.coverages.length > 0 ?
+
             <div className='coverages'>
+              <p className='white'>for this, here are your policies</p>
               {response.coverages.map((coverage, i) =>
                 <Coverage key={i} source={coverage}/>
               )}
@@ -75,7 +77,7 @@ class Response extends Component {
             onClick={() => (this.setState({
               suggestion: true
             }))}>
-            Suggest me something
+            Suggest me someone
           </button>
         </div>
         }
@@ -101,7 +103,7 @@ class Response extends Component {
             margin: 5px 5px;
             text-align: right;
           }
-
+          .white { color: white;}
           .introduction {
             width: 80%;
             text-align: left;

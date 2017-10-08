@@ -2,6 +2,22 @@ let user = {
   name: 'Tobias',
   avatar: '/static/tobias.png',
   birthday: (new Date(1978, 3, 2)).toISOString(),
+  contracts: [
+    {
+      name: 'Household',
+      type: 'policy',
+      subtitle: 'gold',
+      date: (new Date(2017, 7, 16)).toISOString(),
+      avatars: []
+    },
+    {
+      name: 'General liability',
+      type: 'policy',
+      subtitle: 'silver',
+      date: (new Date(2017, 5, 6)).toISOString(),
+      avatars: []
+    }
+  ],
   household: [
     {
       name: 'Christel',
@@ -27,40 +43,27 @@ let user = {
   ],
   policies: [
     {
-      name: 'Name',
+      name: 'Promotion',
       type: 'policy',
-      subtitle: 'Subtitle',
+      subtitle: '30% on household policies',
       date: (new Date(2017, 7, 16)).toISOString(),
-      avatars: ['Joachim']
+      avatars: []
     },
     {
-      name: 'Name',
+      name: 'Winter is coming',
       type: 'policy',
-      subtitle: 'Subtitle',
+      subtitle: 'are you ready?',
       date: (new Date(2017, 5, 6)).toISOString(),
-      avatars: ['Tobias', 'Christel', 'Joachim', 'Erna']
+      avatars: []
     },
     {
-      name: 'Name',
+      name: 'New law',
       type: 'policy',
-      subtitle: 'Subtitle',
+      subtitle: 'Do you have a fire alarm?',
       date: (new Date(2016, 9, 8)).toISOString(),
-      avatars: ['Tobias', 'Christel']
+      avatars: []
     },
-    {
-      name: 'Name',
-      type: 'policy',
-      subtitle: 'Subtitle',
-      date: (new Date(2016, 9, 7)).toISOString(),
-      avatars: ['Tobias']
-    },
-    {
-      name: 'Name',
-      type: 'policy',
-      subtitle: 'Subtitle',
-      date: (new Date(2015, 3, 5)).toISOString(),
-      avatars: ['Christel']
-    }
+
   ],
   house: {
     name: 'Müller\'s House',
@@ -102,14 +105,14 @@ let user = {
     {
       name: 'Intervention',
       type: 'intervention',
-      subtitle: 'Subtitle',
+      subtitle: 'Plumbery',
       date: (new Date(2017, 9, 2)).toISOString(),
       avatars: ['Zurich']
     },
     {
       name: 'Intervention',
       type: 'intervention',
-      subtitle: 'Subtitle',
+      subtitle: 'Masonery',
       date: (new Date(2017, 2, 21)).toISOString(),
       avatars: ['Zurich']
     }

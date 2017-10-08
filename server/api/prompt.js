@@ -3,7 +3,15 @@ const response = {
   [
     {
       name: "Limit",
-      value: 10000
+      value: "10000€"
+    },
+    {
+      name: "Limit Aquariums/water beds",
+      value: "no limit"
+    },
+    {
+      name: "Territory",
+      value: "within building"
     }
   ],
   expert: {

@@ -6,7 +6,7 @@ export default (props) => (
       {props.source.name}
     </span>
     <span className='value'>
-      {props.source.value}€
+      {props.source.value}
     </span>
     <style jsx>{`
       .container{
