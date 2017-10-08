@@ -20,5 +20,6 @@ module.exports = function(app) {
     .put((req,res) => (res.send(user.set(req.body))));
 
   app.route('/prompt')
-    .get((req,res) => (res.send(prompt.get())));
+    .post((req,res) => {
+      return (res.send(prompt.prompt(req.body.question)))});
 };

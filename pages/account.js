@@ -41,14 +41,17 @@ class Account extends Component {
       <div className='container'>
         <Head/>
         <AppBar title='Account' user={this.state.user}/>
-        <div className='househould'>
+        <div className='household'>
           <span className='title'>
-            'Household'
+            Household
           </span>
-          <Avatar source={user}/>
-          {household instanceof Array ? household.map((userEntry,i) =>
-            <Avatar key={i} source={userEntry}/>
-          ) : null}
+          <div className='avatars'>
+            <Avatar source={user}/>
+            {household instanceof Array ? household.map((userEntry,i) =>
+              <Avatar key={i} source={userEntry}/>
+            ) : null}
+          </div>
+
         </div>
         <House house={house}/>
         <Log
@@ -67,12 +70,12 @@ class Account extends Component {
               avatars={avatars}
               event={entry}/>}
         />
-        <button className='expose-button'>
+        {/*<button className='expose-button'>
           <ShareIcon/>
           <span className='text'>
             Concierge Expose as PDF
           </span>
-        </button>
+        </button>*/}
         <style jsx>{`
           :global(body) {
             margin:0px;
@@ -86,6 +89,37 @@ class Account extends Component {
             justify-content: center;
             align-items: center;
             align-content: center;
+          }
+          .household{
+            margin-top: 20px;
+          }
+          .household .avatars{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            align-content: center;
+          }
+          .title{
+            color: #9B9B9B;
+            font-size: 11px;
+            line-height: 14px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+          }
+
+          .title:before,.title:after{
+            content:'';
+            display: inline-block;
+            box-sizing: border-box;
+            height: 1px;
+            width: 120px;
+            border: 1px solid #E8E9EA;
+            margin: 0px 10px;
           }
         `}</style>
       </div>

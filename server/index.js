@@ -11,11 +11,12 @@ var corsOptions = {
 
 app.get('*', cors(corsOptions)); // include before other routes
 app.put('*', cors(corsOptions));
+app.post('*', cors(corsOptions));
+
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
 
 var routes = require('./api'); //importing route
 routes(app); //register the route

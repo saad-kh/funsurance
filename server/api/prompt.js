@@ -10,12 +10,16 @@ const response = {
     name: "Christopher Simons",
     avatar: "static/christopher.png",
     distance: "7500"
-  }
+  },
+  issue: 'Water flood'
 };
 
-const get = () => (response);
+const prompt = (question) => ({
+  question,
+  ...response
+});
 
 module.exports = {
-  get
+  prompt
 };
 
