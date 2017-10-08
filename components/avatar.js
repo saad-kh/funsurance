@@ -5,8 +5,8 @@ export default (props) => (
     <style jsx>{`
       .container{
         margin: 5px;
-        width: 32px;
-        height: 32px;
+        width: ${props.big ? '60px' : '32px'};
+        height: ${props.big ? '60px' : '32px'};
         background-image: url('${props.source.avatar}');
         background-position: center;
         background-size: contain;

@@ -1,7 +1,7 @@
 import React from 'react';
 import Avatar from './avatar';
 import ContractIcon from '../ressources/contract.svg';
-import ToolIcon from '../ressources/tool.svg';
+import ToolIcon from '../ressources/intervention.svg';
 
 const iconForType = {
   'policy': <ContractIcon/>,

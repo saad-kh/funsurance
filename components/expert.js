@@ -5,7 +5,7 @@ import LocationIcon from '../ressources/location.svg';
 export default (props) => (
   <div className='container'>
     <div className='avatar'>
-      <Avatar source={props.source}/>
+      <Avatar source={props.source} big/>
     </div>
     <div className='item'>
       <span className='name'>

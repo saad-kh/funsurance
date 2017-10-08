@@ -47,7 +47,7 @@ class Response extends Component {
         { suggestion ?
           <div className='suggestion'>
             <div className='query'>
-              {user.name} here is what I suggest to you for this situation
+              {user.name} here is the contractor I suggest you for this situation
             </div>
             {response.expert ?
               <div className='expert'>
@@ -62,7 +62,7 @@ class Response extends Component {
         :
         <div className='issue'>
           <div className='query'>
-            I understand you have a {response.issue}
+            Understand you  have [...] {response.issue}
           </div>
           {response.coverages && response.coverages.length > 0 ?
             <div className='coverages'>

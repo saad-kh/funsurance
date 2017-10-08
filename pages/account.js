@@ -8,6 +8,7 @@ import Event from '../components/event';
 import Avatar from '../components/avatar';
 import ShareIcon from '../ressources/share.svg';
 import Head from '../components/head';
+import age from '../services/age';
 
 class Account extends Component {
   constructor(props){
@@ -46,9 +47,25 @@ class Account extends Component {
             Household
           </span>
           <div className='avatars'>
-            <Avatar source={user}/>
+            <div className='avatar'>
+              <Avatar source={user} big/>
+              <span className='name'>
+                {user.name}
+              </span>
+              <span className='birthday'>
+                {age(user.birthday)+ ' y'}
+              </span>
+            </div>
             {household instanceof Array ? household.map((userEntry,i) =>
-              <Avatar key={i} source={userEntry}/>
+              <div key={i} className='avatar'>
+                <Avatar source={userEntry} big/>
+                <span className='name'>
+                  {userEntry.name}
+                </span>
+                <span className='name'>
+                  {age(userEntry.birthday)+ ' y'}
+                </span>
+              </div>
             ) : null}
           </div>
 
@@ -70,12 +87,6 @@ class Account extends Component {
               avatars={avatars}
               event={entry}/>}
         />
-        {/*<button className='expose-button'>
-          <ShareIcon/>
-          <span className='text'>
-            Concierge Expose as PDF
-          </span>
-        </button>*/}
         <style jsx>{`
           :global(body) {
             margin:0px;
@@ -100,6 +111,30 @@ class Account extends Component {
             align-items: center;
             align-content: center;
           }
+
+          .avatar {
+            width: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+          }
+
+          .avatar .name {
+            color: #4A4A4A;
+            font-family: Heebo;
+            font-size: 12px;
+            line-height: 18px;
+          }
+
+          .avatar .birthday {
+            color: #9B9B9B;
+            font-family: Heebo;
+            font-size: 12px;
+            line-height: 18px;
+          }
+
           .title{
             color: #9B9B9B;
             font-size: 11px;

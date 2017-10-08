@@ -1,18 +1,22 @@
 let user = {
   name: 'Tobias',
   avatar: '/static/tobias.png',
+  birthday: (new Date(1978, 3, 2)).toISOString(),
   household: [
     {
       name: 'Christel',
       avatar: '/static/christel.png',
+      birthday: (new Date(1982, 3, 2)).toISOString(),
     },
     {
       name: 'Joachim',
       avatar: '/static/joachim.png',
+      birthday: (new Date(2009, 6, 10)).toISOString(),
     },
     {
       name: 'Erna',
       avatar: '/static/erna.png',
+      birthday: (new Date(2002, 10, 21)).toISOString(),
     }
   ],
   partners: [

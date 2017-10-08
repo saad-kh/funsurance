@@ -1,5 +1,5 @@
 import React from 'react';
-import KitchenIcon from '../ressources/oven.svg';
+import KitchenIcon from '../ressources/kitchen.svg';
 import BathroomIcon from '../ressources/bathtube.svg';
 import LivingroomIcon from '../ressources/sofa.svg';
 import BedroomIcon from '../ressources/bed.svg';
