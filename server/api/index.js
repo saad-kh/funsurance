@@ -1,11 +1,9 @@
 'use strict';
 var recognizeImage = require('./visual-recognition');
+var user = require('./user');
+var prompt = require('./prompt');
 
 module.exports = function(app) {
-  // todoList Routes
-  app.route('/destination')
-    .get((req,res) => (res.send('Victory...')));
-
   app.route('/recognize')
     .get(async (req,res) => {
       try {
@@ -16,4 +14,11 @@ module.exports = function(app) {
         res.send('error');
       }
     });
+
+  app.route('/user')
+    .get((req,res) => (res.send(user.get())))
+    .put((req,res) => (res.send(user.set(req.body))));
+
+  app.route('/prompt')
+    .get((req,res) => (res.send(prompt.get())));
 };

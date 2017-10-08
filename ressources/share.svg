@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="24px" viewBox="0 0 17 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Share Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2-Account" transform="translate(-40.000000, -1254.000000)" fill="#FFFFFF">
+            <path d="M48.4995446,1254 L52.7441364,1258.25737 L51.7012055,1259.30286 L49.2361999,1256.83025 L49.2361999,1270 L47.7628893,1270 L47.7628893,1256.82911 L45.2978836,1259.30286 L44.2560914,1258.25737 L48.4995446,1254 Z M51.246802,1260.93567 L57,1260.93567 L57,1277.9997 L40,1277.9997 L40,1260.93567 L45.7247338,1260.93567 L45.7247338,1262.52767 L41.5860291,1262.52767 L41.5860291,1276.4077 L55.4128324,1276.4077 L55.4128324,1262.52767 L51.246802,1262.52767 L51.246802,1260.93567 Z" id="Share-Icon" transform="translate(48.500000, 1265.999850) rotate(-180.000000) translate(-48.500000, -1265.999850) "></path>
+        </g>
+    </g>
+</svg>
