@@ -22,10 +22,12 @@ const response = {
   issue: 'Water flood'
 };
 
-const prompt = (question) => ({
-  question,
-  ...response
-});
+const prompt = (question) => (
+  Object.Assign(
+    {question},
+    response
+  )
+);
 
 module.exports = {
   prompt

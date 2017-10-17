@@ -1,6 +1,6 @@
-# FUNSURANCE
+# Funsurance
 
-Funsurance's team project entry at [Insurhack](https://www.zurich.de/de-de/insurhack)
+Funsurance's team project entry Ciscool at [Insurhack](https://www.zurich.de/de-de/insurhack)
 
 ## TEAM
 [Rémi Flipo](https://www.linkedin.com/in/remiflipo/)
